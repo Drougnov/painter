@@ -30,8 +30,8 @@ p {
 
 .container-left {
     width: 100%;
-    max-width: 200px;
-    padding-top: calc(2 * var(--section-gap));
+    max-width: 180px;
+    padding-top: calc(1.5 * var(--section-gap));
 }
 
 /* tab-button-container */
@@ -149,7 +149,7 @@ li.active .menu-item-left span {
 /* default section style */
 .default-section {
     background: var(--section-background);
-    padding: calc(2 * var(--section-padding)) var(--section-padding);
+    padding: calc(1.5 * var(--section-padding)) var(--section-padding);
     border-radius: var(--section-border-radius);
     -webkit-border-radius: var(--section-border-radius);
     -moz-border-radius: var(--section-border-radius);
@@ -227,8 +227,9 @@ form > div.form-field:not(:last-of-type) {
         [type="file"]
     ):not([type="color"]).input::placeholder {
     color: #9e9e9e;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
+    letter-spacing: unset;
 }
 
 /* input buttons */
@@ -262,6 +263,82 @@ form > div.form-field:not(:last-of-type) {
     border-color: #0041c1;
 }
 
+/* ----------------------Ceilings--------------------- */
+
+/* plasterboard */
+.plasterboard-form .form-field {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.plasterboard-form .flex-input-container {
+    width: 100%;
+    display: flex;
+    gap: var(--input-gap);
+}
+
+.flex-input-container .label-container {
+    flex-basis: 40%;
+}
+
+.flex-input-container .input-container-wrapper {
+    flex-basis: 60%;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--input-gap);
+}
+
+.input-container-wrapper .input-container {
+    width: calc(50% - (0.5 * var(--input-gap)));
+}
+
+.form-field .no-weight-label {
+    font-weight: 400;
+}
+
+input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not(
+        [type="file"]
+    ):not([type="color"]).ceilings-plasterboard-input-two {
+    margin-top: 20px;
+}
+
+.plasterboard-form .input-container-wrapper .input-container .label {
+    margin-bottom: 4px;
+}
+
+.plasterboard-form p.label {
+    color: #111;
+}
+
+.plasterboard-form p {
+    color: #a3a3a3;
+}
+
+.form-field select:not([data-no-appearance]) {
+    fill: #7a7a7a;
+    color: #7a7a7a;
+    font-size: 13px;
+    padding: 8px 10px;
+    margin-top: 0;
+    border-color: #bfbfbf;
+    border-width: 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-image: url('data:image/svg+xml,<svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="%23000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>chevron-down-small</title><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="add" fill="%237a7a7a" transform="translate(134.186667, 187.520000)"><polygon id="arrowhead-down" points="121.813333 151.893333 0 30.2933333 30.2933333 0 121.813333 91.7333333 213.333333 0 243.626667 30.2933333"></polygon></g></g></g></svg>') !important;
+    background-position: calc(100% - 10px) center !important;
+}
+
+.form-field select option {
+    font-size: 13px;
+}
+
+.plasterboard-form .label {
+    margin-bottom: 12px;
+}
+
 /* specification-container */
 .specification-container {
     width: 100%;
@@ -277,7 +354,7 @@ form > div.form-field:not(:last-of-type) {
 }
 
 .add-paint-specification-btn {
-    color: #0041c1;
+    color: #2d66be;
     background-color: transparent;
     font-size: 12px;
     font-weight: 600;
@@ -288,7 +365,7 @@ form > div.form-field:not(:last-of-type) {
 }
 
 .add-paint-specification-btn:hover {
-    color: #0041c1;
+    color: #2d66be;
     background: transparent;
     border: none;
 }
@@ -301,6 +378,10 @@ form > div.form-field:not(:last-of-type) {
 }
 
 /* paint-costs-container */
+.paint-costs-container {
+    padding-top: var(--section-padding);
+}
+
 .paint-costs-container .warning {
     font-weight: 500;
     color: #ff0000;
