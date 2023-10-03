@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fs.codelinden.com/wp-content/themes/hello-child/style.css"
+        />
+        <link rel="stylesheet" href="painter.css" />
+        <title>Painter</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- sidebar -->
+            <div class="container-left">
+                <div class="sidebar">
+                    <!-- tab button container -->
+                    <div class="tab-button-container">
+                        <button
+                            id="interior-btn"
+                            class="tab-button active"
+                            onclick="showTab('interior')"
+                        >
+                            Interior
+                        </button>
+
+                        <button
+                            id="exterior-btn"
+                            class="tab-button"
+                            onclick="showTab('exterior')"
+                        >
+                            Exterior
+                        </button>
+                    </div>
+
+                    <!-- sidebar-menu -->
+                    <div class="sidebar-menu-container">
+                        <!-- interior-sidebar-menu -->
+                        <ul
+                            id="interior-tab"
+                            class="sidebar-menu interior-container zaSgn active"
+                        >
+                            <li class="DeYlt">
+                                <div
+                                    class="menu-item gsCWf EJVsl active-menu-btn"
+                                >
+                                    <div class="menu-item-left gsCWf EJVsl">
+                                        <!-- chevron-down-icon -->
+                                        <svg
+                                            class="chevron-down"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M6 9L12 15L18 9"
+                                                    stroke="#000000"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Ceilings</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-menu HruDj">
+                                    <div
+                                        id="plasterboard-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('plasterboard')"
+                                    >
+                                        Plasterboard
+                                    </div>
+
+                                    <div
+                                        id="vj-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('vj')"
+                                    >
+                                        VJ
+                                    </div>
+
+                                    <div
+                                        id="pressed-metal-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('pressed-metal')"
+                                    >
+                                        Pressed Metal
+                                    </div>
+
+                                    <div
+                                        id="fivro-with-cover-strip-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('fivro-with-cover-strip')"
+                                    >
+                                        Fivro With Cover Strip
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="DeYlt">
+                                <div class="menu-item gsCWf EJVsl">
+                                    <div class="menu-item-left gsCWf EJVsl">
+                                        <!-- chevron-down-icon -->
+                                        <svg
+                                            class="chevron-down"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M6 9L12 15L18 9"
+                                                    stroke="#000000"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Walls</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-menu HruDj">
+                                    <div
+                                        id="example1-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example1')"
+                                    >
+                                        Example 1
+                                    </div>
+                                    <div
+                                        id="example2-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example2')"
+                                    >
+                                        Example 2
+                                    </div>
+                                    <div
+                                        id="example3-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example3')"
+                                    >
+                                        Example 3
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="DeYlt">
+                                <div class="menu-item gsCWf EJVsl">
+                                    <div class="menu-item-left gsCWf EJVsl">
+                                        <!-- chevron-down-icon -->
+                                        <svg
+                                            class="chevron-down"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M6 9L12 15L18 9"
+                                                    stroke="#000000"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Doors</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-menu HruDj">
+                                    <div
+                                        id="example4-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example4')"
+                                    >
+                                        Example 4
+                                    </div>
+                                    <div
+                                        id="example5-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example5')"
+                                    >
+                                        Example 5
+                                    </div>
+                                    <div
+                                        id="example6-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example6')"
+                                    >
+                                        Example 6
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="DeYlt">
+                                <div class="menu-item gsCWf EJVsl">
+                                    <div class="menu-item-left gsCWf EJVsl">
+                                        <!-- chevron-down-icon -->
+                                        <svg
+                                            class="chevron-down"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M6 9L12 15L18 9"
+                                                    stroke="#000000"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Door Frames</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-menu HruDj">
+                                    <div
+                                        id="example7-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example7')"
+                                    >
+                                        Example 7
+                                    </div>
+                                    <div
+                                        id="example8-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example8')"
+                                    >
+                                        Example 8
+                                    </div>
+                                    <div
+                                        id="example9-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example9')"
+                                    >
+                                        Example 9
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="DeYlt">
+                                <div class="menu-item gsCWf EJVsl">
+                                    <div class="menu-item-left gsCWf EJVsl">
+                                        <!-- chevron-down-icon -->
+                                        <svg
+                                            class="chevron-down"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M6 9L12 15L18 9"
+                                                    stroke="#000000"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Windows</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-menu HruDj">
+                                    <div
+                                        id="example10-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example10')"
+                                    >
+                                        Example 10
+                                    </div>
+                                    <div
+                                        id="example11-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example11')"
+                                    >
+                                        Example 11
+                                    </div>
+                                    <div
+                                        id="example12-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example12')"
+                                    >
+                                        Example 12
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="DeYlt">
+                                <div class="menu-item gsCWf EJVsl">
+                                    <div class="menu-item-left gsCWf EJVsl">
+                                        <!-- chevron-down-icon -->
+                                        <svg
+                                            class="chevron-down"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M6 9L12 15L18 9"
+                                                    stroke="#000000"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Ballastrade</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-menu HruDj">
+                                    <div
+                                        id="example13-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example13')"
+                                    >
+                                        Example 13
+                                    </div>
+                                    <div
+                                        id="example14-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example14')"
+                                    >
+                                        Example 14
+                                    </div>
+                                    <div
+                                        id="example15-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example15')"
+                                    >
+                                        Example 15
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="DeYlt">
+                                <div class="menu-item gsCWf EJVsl">
+                                    <div class="menu-item-left gsCWf EJVsl">
+                                        <!-- chevron-down-icon -->
+                                        <svg
+                                            class="chevron-down"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g
+                                                id="SVGRepo_bgCarrier"
+                                                stroke-width="0"
+                                            ></g>
+                                            <g
+                                                id="SVGRepo_tracerCarrier"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            ></g>
+                                            <g id="SVGRepo_iconCarrier">
+                                                <path
+                                                    d="M6 9L12 15L18 9"
+                                                    stroke="#000000"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </g>
+                                        </svg>
+
+                                        <span>Skirtings</span>
+                                    </div>
+                                </div>
+
+                                <div class="sub-menu HruDj">
+                                    <div
+                                        id="example16-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example16')"
+                                    >
+                                        Example 16
+                                    </div>
+                                    <div
+                                        id="example17-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example17')"
+                                    >
+                                        Example 17
+                                    </div>
+                                    <div
+                                        id="example18-btn"
+                                        class="sub-menu-item gsCWf EJVsl HruDj"
+                                        onclick="showMenuContent('example18')"
+                                    >
+                                        Example 18
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- exterior-sidebar-menu -->
+                        <ul
+                            id="exterior-tab"
+                            class="sidebar-menu exterior-container zaSgn"
+                        ></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main-section -->
+            <div class="container-main gsCWf zaSgn">
+                <div class="menu-content-container default-section">
+                    <div
+                        id="plasterboard-menu-content"
+                        class="menu-content active"
+                    >
+                        <h2 class="section__title">Ceilings - Plasterboard</h2>
+                    </div>
+
+                    <div id="vj-menu-content" class="menu-content">VJ</div>
+
+                    <div id="pressed-metal-menu-content" class="menu-content">
+                        Pressed metal
+                    </div>
+
+                    <div
+                        id="fivro-with-cover-strip-menu-content"
+                        class="menu-content"
+                    >
+                        Fivro with cover strip
+                    </div>
+                </div>
+
+                <!-- specification container -->
+                <div class="specification-container default-section">
+                    specification
+                </div>
+            </div>
+
+            <!-- work-details -->
+            <div class="container-right gsCWf zaSgn">
+                <div class="work-description-container default-section">
+                    <h2 class="section__title">Description of Work</h2>
+                    <form action="#">
+                        <div class="form-field">
+                            <div class="input-container">
+                                <label
+                                    class="label"
+                                    for="total-preparation-time"
+                                    >Total preparation time:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-preparation-time"
+                                    name="total-preparation-time"
+                                    placeholder="Estimated preparation duration..."
+                                />
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="input-container">
+                                <label class="label" for="total-primer-time"
+                                    >Total primer time:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-primer-time"
+                                    name="total-primer-time"
+                                    placeholder="Enter total primer time..."
+                                />
+                            </div>
+                            <div class="input-container">
+                                <label
+                                    class="label"
+                                    for="total-application-time"
+                                    >Total application time:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-application-time"
+                                    name="total-application-time"
+                                    placeholder="Enter total hours..."
+                                />
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="input-container">
+                                <label class="label" for="total-time"
+                                    >Total time:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-time"
+                                    name="total-time"
+                                    placeholder="Enter total time..."
+                                />
+                            </div>
+
+                            <div class="input-container">
+                                <label class="label" for="hourly-rate"
+                                    >Hourly rate:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="hourly-rate"
+                                    name="hourly-rate"
+                                    placeholder="Enter rate per hour..."
+                                />
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="input-container">
+                                <label class="label" for="total-time-cost"
+                                    >Total time cost:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-time-cost"
+                                    name="total-time-cost"
+                                    placeholder="Enter total cost of time..."
+                                />
+                            </div>
+
+                            <div class="input-container">
+                                <label
+                                    class="label"
+                                    for="total-addition-prep-cost"
+                                    >Total additional prep cost:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-addition-prep-cost"
+                                    name="total-addition-prep-cost"
+                                    placeholder="Enter additional cost..."
+                                />
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="input-container">
+                                <label class="label" for="total-paint-cost"
+                                    >Total paint cost:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-paint-cost"
+                                    name="total-paint-cost"
+                                    placeholder="Enter total cost for paint..."
+                                />
+                            </div>
+
+                            <div class="input-container">
+                                <label class="label" for="total-cost"
+                                    >Total cost:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-cost"
+                                    name="total-cost"
+                                    placeholder="Enter total cost..."
+                                />
+                            </div>
+                        </div>
+
+                        <div class="input-button-container">
+                            <button type="reset" class="input-button">
+                                Clear All
+                            </button>
+                            <button type="submit" class="input-button">
+                                Apply
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="paint-costs-container default-section">
+                    <h2 class="section__title">Pain Costs</h2>
+                </div>
+            </div>
+        </div>
+
+        <script src="painter.js"></script>
+    </body>
+</html>
