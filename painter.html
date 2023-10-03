@@ -639,19 +639,86 @@
                             </div>
                         </div>
 
-                        <div class="input-button-container">
-                            <button type="reset" class="input-button">
+                        <section class="input-button-container">
+                            <button
+                                type="reset"
+                                class="input-button input-alt-button"
+                            >
                                 Clear All
                             </button>
-                            <button type="submit" class="input-button">
+                            <button
+                                type="submit"
+                                class="input-button input-primary-button"
+                            >
                                 Apply
                             </button>
-                        </div>
+                        </section>
                     </form>
                 </div>
 
                 <div class="paint-costs-container default-section">
                     <h2 class="section__title">Pain Costs</h2>
+                    <p class="warning">Please enter a paint specification</p>
+                    <form action="#">
+                        <div class="form-field paint-costs-form-field">
+                            <p class="label">Primer</p>
+                            <div class="input-container">
+                                <label class="label" for="0.0-liters.drums"
+                                    >0.0 Liters.Drums:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="0.0-liters.drums"
+                                    name="0.0-liters.drums"
+                                    placeholder="Enter quantity..."
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-field paint-costs-form-field">
+                            <p class="label paint-costs-label">
+                                Primer0.0 Liters.Drums:
+                            </p>
+                            <div class="input-container">
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="primer0.0-liters.drums"
+                                    name="primer0.0-liters.drums"
+                                    placeholder="Enter quantity..."
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <div class="input-container">
+                                <label class="label" for="total-paint-cost"
+                                    >Total paint cost:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-paint-cost"
+                                    name="total-paint-cost"
+                                    placeholder="Enter total cost for paint..."
+                                />
+                            </div>
+
+                            <div class="input-container">
+                                <label class="label" for="total-cost"
+                                    >Total cost:</label
+                                >
+                                <input
+                                    class="input"
+                                    type="number"
+                                    id="total-cost"
+                                    name="total-cost"
+                                    placeholder="Enter total cost..."
+                                />
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
