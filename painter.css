@@ -26,7 +26,7 @@ p {
     overflow: hidden;
 }
 
-/* sidebar */
+/* ---------------------------------------------------sidebar------------------------------------------------------- */
 
 .container-left {
     width: 100%;
@@ -133,7 +133,7 @@ li.active .menu-item-left span {
     font-size: var(--font-size-normal);
 }
 
-/* main-section */
+/* ----------------------------------------------------main-section------------------------------------------------------ */
 
 .container-main {
     flex-basis: 60%;
@@ -179,7 +179,7 @@ li.active .menu-item-left span {
     gap: var(--input-gap);
     padding-top: 16px;
     padding-bottom: 32px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #efefef;
 }
 
 .form-field:first-child {
@@ -265,9 +265,35 @@ form > div.form-field:not(:last-of-type) {
 /* specification-container */
 .specification-container {
     width: 100%;
+    padding: var(--section-padding);
 }
 
-/* work-details */
+.specification-container .form-field {
+    border-bottom: none;
+}
+
+.specification-container .form-field:last-of-type {
+    padding-top: 0;
+}
+
+.add-paint-specification-btn {
+    color: #0041c1;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 20px;
+    border: none;
+    -webkit-padding-start: 0;
+}
+
+.add-paint-specification-btn:hover {
+    color: #0041c1;
+    background: transparent;
+    border: none;
+}
+
+/* -------------------------------------------work-details--------------------------------------------- */
 
 .container-right {
     flex-basis: 40%;

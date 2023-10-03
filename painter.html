@@ -502,7 +502,39 @@
 
                 <!-- specification container -->
                 <div class="specification-container default-section">
-                    specification
+                    <div class="form-field">
+                        <div class="input-container">
+                            <label class="label" for="hourly-rate"
+                                >Hourly rate:</label
+                            >
+                            <input
+                                class="input"
+                                type="number"
+                                id="hourly-rate"
+                                name="hourly-rate"
+                                placeholder="Enter hourly rate..."
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <div class="input-container">
+                            <label class="label" for="paint-specification"
+                                >Paint specification:</label
+                            >
+                            <input
+                                class="input"
+                                type="number"
+                                id="paint-specification"
+                                name="paint-specification"
+                                placeholder="Add a paint specification..."
+                            />
+                        </div>
+                    </div>
+
+                    <button type="button" class="add-paint-specification-btn">
+                        + Add another paint specification
+                    </button>
                 </div>
             </div>
 
@@ -527,6 +559,7 @@
                                 />
                             </div>
                         </div>
+
                         <div class="form-field">
                             <div class="input-container">
                                 <label class="label" for="total-primer-time"
@@ -582,6 +615,7 @@
                                 />
                             </div>
                         </div>
+
                         <div class="form-field">
                             <div class="input-container">
                                 <label class="label" for="total-time-cost"
@@ -611,6 +645,7 @@
                                 />
                             </div>
                         </div>
+
                         <div class="form-field">
                             <div class="input-container">
                                 <label class="label" for="total-paint-cost"
@@ -646,6 +681,7 @@
                             >
                                 Clear All
                             </button>
+
                             <button
                                 type="submit"
                                 class="input-button input-primary-button"
