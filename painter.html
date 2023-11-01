@@ -604,146 +604,124 @@
                     >
                         <h2 class="section__title">Ceilings - Plasterboard</h2>
                         <form action="#" class="plasterboard-form">
-                            <div class="form-field">
-                                <div class="input-container">
-                                    <label
-                                        class="label no-weight-label"
-                                        for="ceilingsplasterboard"
-                                        >CeilingsPlasterboard</label
-                                    >
-                                    <input
-                                        class="input"
-                                        type="text"
-                                        id="ceilingsplasterboard"
-                                        name="ceilingsplasterboard"
-                                    />
-                                    <input
-                                        class="input ceilings-plasterboard-input-two"
-                                        type="text"
-                                        id="ceilingsplasterboard"
-                                        name="ceilingsplasterboard"
-                                    />
-                                </div>
-
-                                <div class="flex-input-container">
-                                    <div class="label-container">
-                                        <p class="label">Number of coats</p>
+                            <div class="add-container">
+                                <div class="form-field">
+                                    <div class="input-container">
+                                        <label class="label" for="area"
+                                            >Area</label
+                                        >
                                         <p>
                                             Specify the desired number of paint
-                                            coats for your plasterboard
+                                            costs for your plasterboard
                                             ceilings.
                                         </p>
+                                        <input
+                                            class="input"
+                                            type="text"
+                                            id="area"
+                                            name="area"
+                                        />
                                     </div>
 
-                                    <div class="input-container-wrapper">
-                                        <div class="input-container">
-                                            <select
-                                                name="number-of-coats"
-                                                id="number-of-coats"
-                                                aria-required="true"
-                                                aria-label="number-of-coats"
-                                                aria-describedby="number-of-coats-description "
-                                            >
-                                                <option disabled selected>
-                                                    Select coats
-                                                </option>
-                                                <option value="one coat">
-                                                    One coat
-                                                </option>
-                                                <option value="two coat">
-                                                    Two coats
-                                                </option>
-                                                <option value="three coat">
-                                                    Three coats
-                                                </option>
-                                            </select>
+                                    <div class="flex-input-container">
+                                        <div class="label-container">
+                                            <p class="label">Number of coats</p>
+                                            <p>
+                                                Specify the desired number of
+                                                paint coats for your
+                                                plasterboard ceilings.
+                                            </p>
+                                        </div>
+
+                                        <div class="input-container-wrapper">
+                                            <div class="input-container">
+                                                <select
+                                                    name="number-of-coats"
+                                                    id="number-of-coats"
+                                                    aria-required="true"
+                                                    aria-label="number-of-coats"
+                                                    aria-describedby="number-of-coats-description "
+                                                >
+                                                    <option disabled selected>
+                                                        Select coats
+                                                    </option>
+                                                    <option value="one coat">
+                                                        One coat
+                                                    </option>
+                                                    <option value="two coat">
+                                                        Two coats
+                                                    </option>
+                                                    <option value="three coat">
+                                                        Three coats
+                                                    </option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="form-field">
-                                <div class="flex-input-container">
-                                    <div class="label-container">
-                                        <p class="label">Paint type</p>
-                                        <p>
-                                            Choose the type of paint that suits
-                                            your preferences and requirements.
-                                        </p>
-                                    </div>
+                                <div class="form-field">
+                                    <div class="flex-input-container">
+                                        <div class="label-container">
+                                            <p class="label">Paint type</p>
+                                            <p>
+                                                Choose the type of paint that
+                                                suits your preferences and
+                                                requirements.
+                                            </p>
+                                        </div>
 
-                                    <div class="input-container-wrapper">
-                                        <div class="input-container">
-                                            <select
-                                                name="paint-type"
-                                                id="paint-type"
-                                                aria-required="true"
-                                                aria-label="paint-type"
-                                                aria-describedby="paint-type-description"
-                                            >
-                                                <option disabled selected>
-                                                    Select paint type
-                                                </option>
-                                                <option value="paint type 1">
-                                                    Paint type 1
-                                                </option>
-                                                <option value="paint type 2">
-                                                    Paint type 2
-                                                </option>
-                                                <option value="paint type 3">
-                                                    Paint type 3
-                                                </option>
-                                            </select>
+                                        <div class="input-container-wrapper">
+                                            <div class="input-container">
+                                                <select
+                                                    name="paint-type"
+                                                    id="paint-type"
+                                                    aria-required="true"
+                                                    aria-label="paint-type"
+                                                    aria-describedby="paint-type-description"
+                                                >
+                                                    <option disabled selected>
+                                                        Select paint type
+                                                    </option>
+                                                    <option
+                                                        value="paint type 1"
+                                                    >
+                                                        Paint type 1
+                                                    </option>
+                                                    <option
+                                                        value="paint type 2"
+                                                    >
+                                                        Paint type 2
+                                                    </option>
+                                                    <option
+                                                        value="paint type 3"
+                                                    >
+                                                        Paint type 3
+                                                    </option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="form-field">
-                                <div class="flex-input-container">
-                                    <div class="label-container">
-                                        <p class="label">
-                                            Inner section details
-                                        </p>
-                                        <p>
-                                            Specify details for inner section,
-                                            including the estimated time
-                                            required and the paint volume.
-                                        </p>
-                                    </div>
-
-                                    <div class="input-container-wrapper">
-                                        <div class="input-container">
-                                            <label
-                                                class="label"
-                                                for="inner-section-litres"
-                                                >Inner section litres:</label
-                                            >
-                                            <input
-                                                class="input"
-                                                type="number"
-                                                id="inner-section-litres"
-                                                name="inner-section-litres"
-                                                placeholder="Enter inner section litres..."
-                                            />
-                                        </div>
-
-                                        <div class="input-container">
-                                            <label
-                                                class="label"
-                                                for="inner-section-hours"
-                                                >Inner section hours:</label
-                                            >
-                                            <input
-                                                class="input"
-                                                type="number"
-                                                id="inner-section-hours"
-                                                name="inner-section-hours"
-                                                placeholder="Enter hours..."
-                                            />
+                                <div class="form-field text-field">
+                                    <div
+                                        class="flex-input-container flex-text-container"
+                                    >
+                                        <div class="text-container">
+                                            <span>10L</span>
+                                            <span>20L</span>
                                         </div>
                                     </div>
                                 </div>
+
+                                <section class="input-button-container">
+                                    <button
+                                        class="add-another-btn input-button input-primary-button"
+                                    >
+                                        Add another
+                                    </button>
+                                </section>
                             </div>
 
                             <div class="form-field">

@@ -277,6 +277,26 @@ form > div.form-field:not(:last-of-type) {
     gap: var(--input-gap);
 }
 
+.form-field.text-field:last-of-type {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #efefef;
+}
+
+.plasterboard-form .flex-text-container {
+    justify-content: flex-end;
+}
+
+.flex-text-container .text-container {
+    flex-basis: calc(60% - 25px);
+    display: flex;
+    justify-content: space-evenly;
+    gap: var(--input-gap);
+}
+
+.flex-text-container .text-container span {
+    width: 100%;
+}
+
 .flex-input-container .label-container {
     flex-basis: 40%;
 }
@@ -310,6 +330,10 @@ input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not(
     color: #111;
 }
 
+.plasterboard-form .label + p {
+    margin-bottom: 0;
+}
+
 .plasterboard-form p {
     color: #a3a3a3;
 }
@@ -337,6 +361,20 @@ input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not(
 
 .plasterboard-form .label {
     margin-bottom: 12px;
+}
+
+.add-container {
+    padding: var(--section-padding);
+    border-radius: var(--section-border-radius);
+    -webkit-border-radius: var(--section-border-radius);
+    -moz-border-radius: var(--section-border-radius);
+    -ms-border-radius: var(--section-border-radius);
+    -o-border-radius: var(--section-border-radius);
+    box-shadow: 0 0 0 1px #efefef;
+}
+
+.add-container .add-another-btn {
+    width: max-content;
 }
 
 /* specification-container */
