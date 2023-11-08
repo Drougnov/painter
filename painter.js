@@ -95,3 +95,13 @@ function setActiveSubMenuItem(menuContentId) {
 showTab("interior");
 const activeMenuButtonByDefault = document.querySelector(".active-menu-btn");
 activeMenuButtonByDefault.click();
+
+// Show popup on page load
+window.onload = function () {
+    console.log("page loaded");
+    initiate_popup({
+        target: "#hourly-rate-popup",
+        overlay_color: "rgba(0,0,0,0.65)",
+        popup_position: "centered",
+    });
+};
